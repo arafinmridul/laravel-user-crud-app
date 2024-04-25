@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 // php artisan make:controller UserController
 // php artisan migrate // for db tables creation
 
+# Request $request is for type hinting and argument expectation
+
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -27,10 +29,22 @@ class UserController extends Controller
         return redirect('/');
         // return response(json_encode('From user controller'));
     }
-
-    public function logout(Request $request)
+    public function logout()
     {
         auth()->logout();
+        return redirect('/');
+    }
+    public function login(Request $request)
+    {
+        $incomingFields = $request->validate([
+            'loginname' => 'required',
+            'loginpassword' => 'required'
+        ]);
+
+        if (auth()->attempt(['name' => $incomingFields['loginname'], 'password' => $incomingFields['loginpassword']])) {
+            $request->session()->regenerate();
+        }
+
         return redirect('/');
     }
 }
