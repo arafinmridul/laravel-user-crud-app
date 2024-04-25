@@ -15,6 +15,15 @@
         @csrf
         <button>Log out</button>
     </form>
+    <div style="border: 1.5px solid black; padding: 25px">
+        <h2>Create a new post</h2>
+        <form action="/create-post" method="POST">
+            @csrf
+            <input type="text" name="title" placeholder="Post Title">
+            <textarea name="body" placeholder="Write your post..."></textarea>
+            <button>Create Post</button>
+        </form>
+    </div>
     @else
     <div style="border: 1.5px solid black; padding: 25px;">
         <h2>Register</h2>
