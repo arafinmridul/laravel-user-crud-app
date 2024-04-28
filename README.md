@@ -1,3 +1,9 @@
+App Screenshots
+![Screenshot 2024-04-28 215035](https://github.com/arafinmridul/laravel-user-crud-app/assets/110626481/523dd7b8-6612-4779-919f-621214b4d591)
+![Screenshot 2024-04-28 215213](https://github.com/arafinmridul/laravel-user-crud-app/assets/110626481/e4fda28e-202c-4c8a-858e-251382fc8988)
+![Screenshot 2024-04-28 215342](https://github.com/arafinmridul/laravel-user-crud-app/assets/110626481/11ea4206-2140-4088-a9be-beada72d8fbe)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
