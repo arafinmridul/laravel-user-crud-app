@@ -48,9 +48,18 @@
         <h2>Register</h2>
         <form action="/register" method="POST">
             @csrf
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
+            <p>
+                <input type="text" name="name" placeholder="Name" id="reg_name">
+                <label for="reg_name">3-10 Characters</label>
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="Email" id="reg_email">
+                <label for="reg_email">Your unique email</label>
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="Password" id="reg_password">
+                <label for="reg_password">8-16 Characters</label>
+            </p>
             <button type="submit" class="btn btn-success">Register</button>
         </form>
     </div>
